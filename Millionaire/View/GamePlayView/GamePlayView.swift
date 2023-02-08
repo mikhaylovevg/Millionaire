@@ -9,27 +9,30 @@ import UIKit
 
 class GamePlayView: UIView {
     
-    let spacingMain: CGFloat = 24
-    let offSet: CGFloat = 16
-    let spacingBetweenAnswerButton: CGFloat = 14
+    
+    // MARK: - Constants
+    
+    private let spacingMain: CGFloat = 24
+    private let offSet: CGFloat = 16
+    private let spacingBetweenAnswerButton: CGFloat = 14
+    
+    
+    // MARK: - Canstants and UI
     
     private let stackViewMain = UIStackView()
     private let stackViewTop = UIStackView()
     
     let backButton = UIButton()
-    let questionNumberLabel = UILabel()
-    let shoeTableQuestionsButton = UIButton()
+    private let questionNumberLabel = UILabel()
+    let showTableQuestionsButton = UIButton()
     
-    let timerLabel = UILabel()
-    
-    let questionLabel = UILabel()
+    private let timerLabel = UILabel()
+    private let questionLabel = UILabel()
     
     private let stackViewContainerAnswers = UIStackView()
-    
     var answerButtons: [UIButton] = []
     
     private let stackViewBottom = UIStackView()
-    
     var clueButtons: [UIButton] = []
     
     /// принимает массив ответов и устанавливает на кнопку
@@ -39,12 +42,33 @@ class GamePlayView: UIView {
         }
     }
     
+    // MARK: - Internal methods
+    
+    /// установить вопрос в UILabel
+    func configureQiestionLabel(_ text: String) {
+        questionLabel.text = text
+    }
+    
+    func configureQuestionNumberLabel(_ number: Int) {
+        questionNumberLabel.text = "QUESTION: \(number)"
+    }
+    
+    /// установить значение таймера в UILabel
+    func configureTimerLabel(_ timer: Int) {
+        timerLabel.text = "\(timer)"
+        
+        // TODO: над будет подумать какой формат принимает
+    }
+    
     init() {
         super.init(frame: .zero)
         
       setupView()
         
     }
+    
+    
+    // MARK: - Methods
     
     private func setupView() {
         // view setting
@@ -112,14 +136,14 @@ class GamePlayView: UIView {
     }
     
     private func setupShoeTableQuestionsButton() {
-        shoeTableQuestionsButton.setImage(UIImage.getImageSymbolForButton(with: 20, and: "list.bullet.clipboard"), for: .normal)
-        shoeTableQuestionsButton.tintColor = .white
+        showTableQuestionsButton.setImage(UIImage.getImageSymbolForButton(with: 20, and: "list.bullet.clipboard"), for: .normal)
+        showTableQuestionsButton.tintColor = .white
         
-        stackViewTop.addArrangedSubview(shoeTableQuestionsButton)
+        stackViewTop.addArrangedSubview(showTableQuestionsButton)
         
         NSLayoutConstraint.activate([
-            shoeTableQuestionsButton.heightAnchor.constraint(equalToConstant: 50),
-            shoeTableQuestionsButton.widthAnchor.constraint(equalToConstant: 50)
+            showTableQuestionsButton.heightAnchor.constraint(equalToConstant: 50),
+            showTableQuestionsButton.widthAnchor.constraint(equalToConstant: 50)
         ])
     }
     
