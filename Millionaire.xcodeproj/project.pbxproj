@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		10DA5E47299422D0005E5BCB /* GamePlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayController.swift; sourceTree = "<group>"; };
-		10DA5E49299422FD005E5BCB /* GamePlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GamePlayView.swift; path = Millionaire/Controller/GamePlayView.swift; sourceTree = SOURCE_ROOT; };
+		10DA5E49299422FD005E5BCB /* GamePlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GamePlayView.swift; path = Millionaire/View/GamePlayView/GamePlayView.swift; sourceTree = SOURCE_ROOT; };
 		6C9A58FA2993FECF00AD01BD /* Millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Millionaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9A58FD2993FECF00AD01BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C9A58FF2993FECF00AD01BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10DA5E4B29942441005E5BCB /* GamePlayView */ = {
+			isa = PBXGroup;
+			children = (
+				10DA5E49299422FD005E5BCB /* GamePlayView.swift */,
+			);
+			path = GamePlayView;
+			sourceTree = "<group>";
+		};
 		6C9A58F12993FECF00AD01BD = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +99,7 @@
 		6C9A59172993FFA000AD01BD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				10DA5E49299422FD005E5BCB /* GamePlayView.swift */,
+				10DA5E4B29942441005E5BCB /* GamePlayView */,
 			);
 			path = View;
 			sourceTree = "<group>";
