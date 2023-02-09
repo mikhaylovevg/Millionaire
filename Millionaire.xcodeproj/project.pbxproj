@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
 		00D3C67029950D8B001C55C5 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3C66F29950D8B001C55C5 /* GameOverView.swift */; };
 		00D3C67229950DB0001C55C5 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3C67129950DB0001C55C5 /* GameOverViewController.swift */; };
+
+		10DA5E48299422D0005E5BCB /* GamePlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA5E47299422D0005E5BCB /* GamePlayController.swift */; };
+		10DA5E4A299422FD005E5BCB /* GamePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA5E49299422FD005E5BCB /* GamePlayView.swift */; };
+
+
+
 		6C9A58FE2993FECF00AD01BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A58FD2993FECF00AD01BD /* AppDelegate.swift */; };
 		6C9A59002993FECF00AD01BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A58FF2993FECF00AD01BD /* SceneDelegate.swift */; };
 		6C9A59022993FECF00AD01BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A59012993FECF00AD01BD /* ViewController.swift */; };
@@ -18,8 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+
 		00D3C66F29950D8B001C55C5 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = SOURCE_ROOT; };
 		00D3C67129950DB0001C55C5 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+
+
+		10DA5E47299422D0005E5BCB /* GamePlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayController.swift; sourceTree = "<group>"; };
+		10DA5E49299422FD005E5BCB /* GamePlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GamePlayView.swift; path = Millionaire/View/GamePlayView/GamePlayView.swift; sourceTree = SOURCE_ROOT; };
+
 		6C9A58FA2993FECF00AD01BD /* Millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Millionaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9A58FD2993FECF00AD01BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C9A58FF2993FECF00AD01BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +54,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+
 		00D3C66E29950D5D001C55C5 /* GameOverView */ = {
 			isa = PBXGroup;
 			children = (
 				00D3C66F29950D8B001C55C5 /* GameOverView.swift */,
 			);
 			name = GameOverView;
+
+		10DA5E4B29942441005E5BCB /* GamePlayView */ = {
+			isa = PBXGroup;
+			children = (
+				10DA5E49299422FD005E5BCB /* GamePlayView.swift */,
+			);
+			path = GamePlayView;
+
+
 			sourceTree = "<group>";
 		};
 		6C9A58F12993FECF00AD01BD = {
@@ -68,6 +91,7 @@
 		6C9A58FC2993FECF00AD01BD /* Millionaire */ = {
 			isa = PBXGroup;
 			children = (
+				10DA5E40299417D9005E5BCB /* Resources */,
 				6C9A59142993FF3700AD01BD /* Application */,
 				6C9A59162993FF9100AD01BD /* Model */,
 				6C9A59172993FFA000AD01BD /* View */,
@@ -99,7 +123,11 @@
 		6C9A59172993FFA000AD01BD /* View */ = {
 			isa = PBXGroup;
 			children = (
+
 				00D3C66E29950D5D001C55C5 /* GameOverView */,
+
+				10DA5E4B29942441005E5BCB /* GamePlayView */,
+
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,7 +136,11 @@
 			isa = PBXGroup;
 			children = (
 				6C9A59012993FECF00AD01BD /* ViewController.swift */,
+
 				00D3C67129950DB0001C55C5 /* GameOverViewController.swift */,
+
+				10DA5E47299422D0005E5BCB /* GamePlayController.swift */,
+
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -186,7 +218,11 @@
 				6C9A591A2993FFF500AD01BD /* GameBrain.swift in Sources */,
 				00D3C67229950DB0001C55C5 /* GameOverViewController.swift in Sources */,
 				6C9A59022993FECF00AD01BD /* ViewController.swift in Sources */,
+				10DA5E48299422D0005E5BCB /* GamePlayController.swift in Sources */,
 				6C9A58FE2993FECF00AD01BD /* AppDelegate.swift in Sources */,
+
+				10DA5E4A299422FD005E5BCB /* GamePlayView.swift in Sources */,
+
 				6C9A59002993FECF00AD01BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
